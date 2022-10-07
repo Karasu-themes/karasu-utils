@@ -1,0 +1,54 @@
+@mixin query-class ( $bp: $breakpoint ) {
+  @at-root {
+    @each $name, $value in $bp {
+      @media screen and (min-width: #{$value}) {
+        &\:#{$name} {
+          @content;
+        }
+      }
+    }
+  }
+}
+
+@mixin print-columns ($cls: $columns, $name: "", $className: "gc") {
+  @for $i from 1 through $cls {
+    .#{$className}-#{$i + $name} {--#{$className}: #{$i};}
+  }  
+}
+
+@mixin print-columns-span ($cls: $columns, $name: "", $className: "gs") {
+  @for $i from 1 through $cls {
+    .#{$className}-#{$i + $name} {--#{$className}: #{$i};}
+  }  
+}
+
+// @mixin para breakpoints especificos
+@mixin query-xs {
+  @media screen and (min-width: $xs) {
+    @content;
+  }
+}
+
+@mixin query-sm {
+  @media screen and (min-width: $sm) {
+    @content;
+  }
+}
+
+@mixin query-md {
+  @media screen and (min-width: $md) {
+    @content;
+  }
+}
+
+@mixin query-lg {
+  @media screen and (min-width: $lg) {
+    @content;
+  }
+}
+
+@mixin query-xl {
+  @media screen and (min-width: $xl) {
+    @content;
+  }
+}

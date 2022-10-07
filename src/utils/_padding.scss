@@ -1,0 +1,16 @@
+@each $name, $value in $spacing {
+  .p#{$name} {padding: #{$value};}
+  .p#{$name}-t {padding-top: #{$value};}
+  .p#{$name}-r {padding-right: #{$value};}
+  .p#{$name}-b {padding-bottom: #{$value};}
+  .p#{$name}-l {padding-left: #{$value};}
+  .p#{$name}-x {
+    padding-left: #{$value};
+    padding-right: #{$value};
+  }
+
+  .p#{$name}-y {
+    padding-top: #{$value};
+    padding-bottom: #{$value};
+  }
+}

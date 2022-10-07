@@ -1,0 +1,27 @@
+{
+  "name": "karasu-utils",
+  "version": "0.1.0",
+  "description": "Pequeña librería de utilidades css (display, grid, flexbox, margin, padding)",
+  "main": "index.js",
+  "scripts": {
+    "css.build": "sass ./src/karasu-utils.scss ./dest/karasu-utils.css",
+    "css.watch": "sass --watch ./src/karasu-utils.scss ./dest/karasu-utils.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Karasu-themes/karasu-utils.git"
+  },
+  "keywords": [
+    "scss",
+    "sass",
+    "css",
+    "flexbox",
+    "grid"
+  ],
+  "author": "Marcelo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Karasu-themes/karasu-utils/issues"
+  },
+  "homepage": "https://github.com/Karasu-themes/karasu-utils#readme"
+}

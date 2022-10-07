@@ -1,0 +1,16 @@
+/* utils: display */
+.inline {display: inline;}
+.block {display: block;}
+.inline-block {display: inline-block;}
+.flex {display: flex;}
+.inline-flex {display: inline-flex;}
+.grid {display: grid;}
+.none {display: none;}
+
+.inline {@include query-class {display: inline;}}
+.block {@include query-class {display: block;}}
+.inline-block {@include query-class {display: inline-block;}}
+.flex {@include query-class {display: flex;}}
+.inline-flex {@include query-class {display: inline-flex;}}
+.grid {@include query-class {display: grid;}}
+.none {@include query-class {display: none;}}

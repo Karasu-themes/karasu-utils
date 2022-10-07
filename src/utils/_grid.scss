@@ -1,0 +1,56 @@
+/* Grid column */
+[class*="gc-"] {
+  --gc: 1;
+  grid-template-columns: repeat(var(--gc), minmax(0, 1fr));
+}
+.gc-1 {--gc: 1;}
+.gc-2 {--gc: 2;}
+.gc-3 {--gc: 3;}
+.gc-4 {--gc: 4;}
+.gc-5 {--gc: 5;}
+.gc-6 {--gc: 6;}
+.gc-7 {--gc: 7;}
+.gc-8 {--gc: 8;}
+.gc-9 {--gc: 9;}
+.gc-10 {--gc: 10;}
+.gc-11 {--gc: 11;}
+.gc-12 {--gc: 12;}
+
+/*=> Gap */
+@each $name, $value in $spacing {
+  .gap-#{$name} {
+    gap: #{$value};
+  }
+}
+
+/*=> grid span */
+[class*="gs-"] {
+  --gs: 1;
+  grid-column: span var(--gs) / span var(--gs);
+}
+
+.gs-1 {--gs: 1;}
+.gs-2 {--gs: 2;}
+.gs-3 {--gs: 3;}
+.gs-4 {--gs: 4;}
+.gs-5 {--gs: 5;}
+.gs-6 {--gs: 6;}
+.gs-7 {--gs: 7;}
+.gs-8 {--gs: 8;}
+.gs-9 {--gs: 9;}
+.gs-10 {--gs: 10;}
+.gs-11 {--gs: 11;}
+.gs-12 {--gs: 12;}
+
+/* Responsive */
+@include query-xs { @include print-columns($columns, "\\:xs"); }
+@include query-sm { @include print-columns($columns, "\\:sm"); }
+@include query-md { @include print-columns($columns, "\\:md"); }
+@include query-lg { @include print-columns($columns, "\\:lg"); }
+@include query-xl { @include print-columns($columns, "\\:xl"); }
+
+@include query-xs { @include print-columns-span($columns, "\\:xs"); }
+@include query-sm { @include print-columns-span($columns, "\\:sm"); }
+@include query-md { @include print-columns-span($columns, "\\:md"); }
+@include query-lg { @include print-columns-span($columns, "\\:lg"); }
+@include query-xl { @include print-columns-span($columns, "\\:xl"); }

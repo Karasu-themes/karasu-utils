@@ -1,0 +1,59 @@
+/* Flex content */
+.jc-start {justify-content: flex-start}
+.jc-center {justify-content: center}
+.jc-end {justify-content: flex-end}
+.jc-around {justify-content: space-around}
+.jc-between {justify-content: space-between}
+.jc-evenly {justify-content: space-evenly}
+.jc-stretch {justify-content: stretch}
+.jc-revert {justify-content: revert}
+
+/* Flex items */
+.ai-start {align-items: flex-start;}
+.ai-center {align-items: center;}
+.ai-end {align-items: flex-end;}
+.ai-baseline {align-items: baseline;}
+.ai-stretch {align-items: stretch;}
+
+/* Flex wrap */
+.f-wrap {flex-wrap: wrap;}
+.f-wrap-reverse {flex-wrap: wrap-reverse;}
+.f-nowrap {flex-wrap: nowrap;}
+
+/* Flex grow */
+.f-grow-0 {flex-grow: 0;}
+.f-grow-1 {flex-grow: 1;}
+
+/* Flex direction */
+.f-row {flex-direction: row;}
+.f-column {flex-direction: column;}
+.f-row-reverse {flex-direction: row-reverse;}
+.f-column-reverse {flex-direction: column-reverse;}
+
+/* Responsive */
+.jc-start {@include query-class {justify-content: flex-start}}
+.jc-center {@include query-class {justify-content: center}}
+.jc-end {@include query-class {justify-content: flex-end}}
+.jc-around {@include query-class {justify-content: space-around}}
+.jc-between {@include query-class {justify-content: space-between}}
+.jc-evenly {@include query-class {justify-content: space-evenly}}
+.jc-stretch {@include query-class {justify-content: stretch}}
+.jc-revert {@include query-class {justify-content: revert}}
+
+.ai-start {@include query-class {align-items: flex-start;}}
+.ai-center {@include query-class {align-items: center;}}
+.ai-end {@include query-class {align-items: flex-end;}}
+.ai-baseline {@include query-class {align-items: baseline;}}
+.ai-stretch {@include query-class {align-items: stretch;}}
+
+.f-wrap {@include query-class {flex-wrap: wrap;}}
+.f-wrap-reverse {@include query-class {flex-wrap: wrap-reverse;}}
+.f-nowrap {@include query-class {flex-wrap: nowrap;}}
+
+.f-grow-0 {@include query-class {flex-grow: 0;}}
+.f-grow-1 {@include query-class {flex-grow: 1;}}
+
+.f-row {@include query-class {flex-direction: row;}}
+.f-column {@include query-class {flex-direction: column;}}
+.f-row-reverse {@include query-class {flex-direction: row-reverse;}}
+.f-column-reverse {@include query-class {flex-direction: column-reverse;}}
