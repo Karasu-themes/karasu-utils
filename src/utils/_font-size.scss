@@ -1,0 +1,9 @@
+@each $name, $value in $fsize {
+  .fnt-#{$name} {font-size: #{$value};}
+}
+
+@each $name, $value in $fsize {
+  .fnt-#{$name} {
+    @include query-class {font-size: #{$value};}
+  }
+}
