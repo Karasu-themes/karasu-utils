@@ -3,6 +3,11 @@
 @import './core/mixins';
 
 /*
+*=> Reset
+*-------------*/
+@import './core/reset';
+
+/*
 *=> Display
 *-------------*/
 @import './utils/display';
@@ -18,6 +23,11 @@
 @import './utils/grid';
 
 /*
+*=> Gap
+*-------------*/
+@import './utils/gap';
+
+/*
 *=> Padding
 *-------------*/
 @import './utils/padding';
@@ -26,3 +36,61 @@
 *=> Margin
 *-------------*/
 @import './utils/margin';
+
+/*
+*=> Radius
+*-------------*/
+@import './utils/border-radius';
+
+/*
+*=> Position
+*-------------*/
+@import './utils/position';
+
+/*
+*=> left,
+*=> top 
+*=> right 
+*=> bottom
+*-------------*/
+@import './utils/left';
+@import './utils/top';
+@import './utils/right';
+@import './utils/bottom';
+
+/*
+*=> Width
+*=> height
+*-------------*/
+@import './utils/width';
+@import './utils/height';
+
+/*
+*=> Font size
+*-------------*/
+@import './utils/font-size';
+
+/*
+*=> Font weight
+*----------------*/
+@import './utils/font-weight';
+
+/*
+*=> Text
+*-------------*/
+@import './utils/text';
+
+/*
+*=> Line height
+*-------------*/
+@import './utils/line-height';
+
+/*
+*=> Opacity
+*-------------*/
+@import './utils/opacity';
+
+/*
+*=> Drop shadow
+*----------------*/
+@import './utils/drop-shadow';
