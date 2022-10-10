@@ -1,0 +1,15 @@
+@each $name, $value in $whsize {
+  .w-#{$name} {width: #{$value};}
+}
+
+.w-screen {width: 100vw;}
+
+@each $name, $value in $whsize {
+  .w-#{$name} {
+    @include query-class {width: #{$value};}
+  }
+}
+
+.w-screen {
+  @include query-class {width: 100vw;}
+}

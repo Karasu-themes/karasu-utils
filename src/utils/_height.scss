@@ -1,0 +1,15 @@
+@each $name, $value in $whsize {
+  .h-#{$name} {height: #{$value};}
+}
+
+.h-screen {height: 100vh;}
+
+@each $name, $value in $whsize {
+  .h-#{$name} {
+    @include query-class {height: #{$value};}
+  }
+}
+
+.h-screen {
+  @include query-class {height: 100vh;}
+}
