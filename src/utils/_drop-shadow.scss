@@ -1,0 +1,9 @@
+.drop-shadow {box-shadow: 0 2px 2px rgba(#000, .12);}
+.drop-shadow-sm {box-shadow: 0 6px 8px rgba(#000, .15);}
+.drop-shadow-md {box-shadow: 0 8px 12px rgba(#000, .2);}
+.drop-shadow-lg {box-shadow: 0 16px 16px rgba(#000, .3);}
+
+.drop-shadow {@include query-class {box-shadow: 0 2px 2px rgba(#000, .12);}}
+.drop-shadow-sm {@include query-class {box-shadow: 0 6px 8px rgba(#000, .15);}}
+.drop-shadow-md {@include query-class {box-shadow: 0 8px 12px rgba(#000, .2);}}
+.drop-shadow-lg {@include query-class {box-shadow: 0 16px 16px rgba(#000, .3);}}
