@@ -1,0 +1,9 @@
+.relative {position: relative;}
+.absolute {position: absolute;}
+.static {position: static;}
+.sticky {position: sticky;}
+
+.relative {@include query-class {position: relative;}}
+.absolute {@include query-class {position: absolute;}}
+.static {@include query-class {position: static;}}
+.sticky {@include query-class {position: sticky;}}
