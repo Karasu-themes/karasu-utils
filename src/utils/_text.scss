@@ -1,0 +1,13 @@
+.txt-left {text-align: left;}
+.txt-center {text-align: center;}
+.txt-right {text-align: right;}
+.txt-capitalize {text-transform: capitalize;}
+.txt-lowercase {text-transform: lowercase;}
+.txt-uppercase {text-transform: uppercase;}
+
+.txt-left {@include query-class {text-align: left;}}
+.txt-center {@include query-class {text-align: center;}}
+.txt-right {@include query-class {text-align: right;}}
+.txt-capitalize {@include query-class {text-transform: capitalize;}}
+.txt-lowercase {@include query-class {text-transform: lowercase;}}
+.txt-uppercase {@include query-class {text-transform: uppercase;}}

@@ -1,0 +1,9 @@
+@each $name, $value in $fwght {
+  .fnt-#{$name} {font-weight: #{$value};}
+}
+
+@each $name, $value in $fwght {
+  .fnt-#{$name} {
+    @include query-class {font-weight: #{$value};}
+  }
+}
