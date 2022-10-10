@@ -16,13 +16,6 @@
 .gc-11 {--gc: 11;}
 .gc-12 {--gc: 12;}
 
-/*=> Gap */
-@each $name, $value in $spacing {
-  .gap-#{$name} {
-    gap: #{$value};
-  }
-}
-
 /*=> grid span */
 [class*="gs-"] {
   --gs: 1;

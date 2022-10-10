@@ -1,0 +1,5 @@
+@each $name, $value in $spacing {
+  .gap-#{$name} {
+    gap: #{$value};
+  }
+}
