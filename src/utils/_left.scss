@@ -1,0 +1,9 @@
+@each $name, $value in $pxy {
+  .left-#{$name} {left: #{$value};}
+}
+
+@each $name, $value in $pxy {
+  .left-#{$name} {
+    @include query-class {left: #{$value};}
+  }
+}

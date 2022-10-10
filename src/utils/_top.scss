@@ -1,0 +1,9 @@
+@each $name, $value in $pxy {
+  .top-#{$name} {top: #{$value};}
+}
+
+@each $name, $value in $pxy {
+  .top-#{$name} {
+    @include query-class {top: #{$value};}
+  }
+}
