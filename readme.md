@@ -2,6 +2,10 @@
 
 **Karasu utils** es un pequeño conjunto de clases para manejar aspectosbásicos del diseño.
 
+> Está librería ha sido pensada para uso personal, ¡se recomienda discreción  al momento de usarla! :)
+
+> Pronto se habrá  documentación más detallada. ;)
+
 ## Clases disponibles
 
 ### Display
