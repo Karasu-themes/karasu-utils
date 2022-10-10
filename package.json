@@ -1,6 +1,6 @@
 {
   "name": "karasu-utils",
-  "version": "0.1.0",
+  "version": "0.1.19",
   "description": "Pequeña librería de utilidades css (display, grid, flexbox, margin, padding)",
   "main": "index.js",
   "scripts": {
