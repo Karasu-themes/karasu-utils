@@ -22,7 +22,7 @@
   }  
 }
 
-// @mixin para breakpoints especificos
+// @mixin for specific breakpoints
 @mixin query-xs {
   @media screen and (min-width: $xs) {
     @content;
